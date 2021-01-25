@@ -24,7 +24,7 @@ const Formulario = ({setBusqueda}) => {
         <form
             onSubmit={buscarImagenes}
         >
-            <div className="row">
+            <div className="row mt-5">
                 <div className="form-group col-md-8">
                     <input
                         type="text"
@@ -41,7 +41,7 @@ const Formulario = ({setBusqueda}) => {
                     />
                 </div>
             </div>
-            { error ? <Error mensaje="Agrega una palabra para buscar" /> : null }
+            { error ? <Error mensaje="Debe escribir al menos una palabra" /> : null }
         </form>
     )
 }
